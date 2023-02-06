@@ -32,7 +32,6 @@ function oilPrice(diesel, petrol, octane) {
   const totalOilPrice = dieselPrice + petrolPrice + octanePrice;
   return totalOilPrice;
 }
-
 const totalOil = oilPrice(5, 5, 10);
 // console.log(totalOil);
 
@@ -51,6 +50,26 @@ function publiceBusFare(people) {
   const totalResult = total * 250;
   return totalResult;
 }
-
 const restPassenger = publiceBusFare(70);
-console.log(restPassenger);
+// console.log(restPassenger);
+
+// 5.
+
+const friend1 = { name: "Tom", friend: "Rock" };
+const friend2 = { name: "Rock", friend: "Tom" };
+
+function isBestFriend(friend1, friend2) {
+  if (
+    friend1.name === "Tom" &&
+    friend2.friend === "Tom" &&
+    friend1.friend === "Rock" &&
+    friend2.name === "Rock"
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+const friends = isBestFriend(friend1, friend2);
+console.log(friends);
