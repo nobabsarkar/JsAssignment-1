@@ -24,7 +24,6 @@ const results = isJavascriptFile("assignment.js");
     petrol --> 130
     octane --> 135
  */
-
 function oilPrice(diesel, petrol, octane) {
   const dieselPrice = diesel * 114;
   const petrolPrice = petrol * 130;
@@ -36,3 +35,22 @@ function oilPrice(diesel, petrol, octane) {
 
 const totalOil = oilPrice(5, 5, 10);
 // console.log(totalOil);
+
+// 4.
+/*
+    reserved bus ----> 50
+    microbus ----> 11
+    rest people will go by public bus
+*/
+
+function publiceBusFare(people) {
+  const busSpace = 50;
+  const microbusSpace = 11;
+  const result = people % busSpace;
+  const total = result % microbusSpace;
+  const totalResult = total * 250;
+  return totalResult;
+}
+
+const restPassenger = publiceBusFare(70);
+console.log(restPassenger);
