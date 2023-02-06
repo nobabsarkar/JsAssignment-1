@@ -15,6 +15,24 @@ function isJavascriptFile(check) {
     return "Please write correct file format";
   }
 }
-
 const results = isJavascriptFile("assignment.js");
-console.log(results);
+// console.log(results);
+
+// 3. calculate the total oil price that I have to pay
+/**
+    diesel --> 114
+    petrol --> 130
+    octane --> 135
+ */
+
+function oilPrice(diesel, petrol, octane) {
+  const dieselPrice = diesel * 114;
+  const petrolPrice = petrol * 130;
+  const octanePrice = octane * 135;
+
+  const totalOilPrice = dieselPrice + petrolPrice + octanePrice;
+  return totalOilPrice;
+}
+
+const totalOil = oilPrice(5, 5, 10);
+// console.log(totalOil);
